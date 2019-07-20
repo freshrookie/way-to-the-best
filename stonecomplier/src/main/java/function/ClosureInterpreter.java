@@ -1,0 +1,10 @@
+package function;
+
+import intercepter.BasicInterpreter;
+import lexer.ParseException;
+
+public class ClosureInterpreter extends BasicInterpreter {
+    public static void main(String[] args) throws ParseException {
+        run(new ClosureParser(), new NestedEnv());
+    }
+}
